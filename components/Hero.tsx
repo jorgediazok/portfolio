@@ -11,8 +11,8 @@ const Hero = () => {
           <Image
             src='/profile.jpeg'
             alt='profile_pic'
-            width={325}
-            height={325}
+            width={275}
+            height={275}
             className='rounded-full shadow-2xl xs:w-225 xs:h-225'
           />
         </div>
