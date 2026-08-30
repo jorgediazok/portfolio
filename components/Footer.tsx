@@ -1,9 +1,13 @@
+import { getTranslations } from 'next-intl/server';
 import {
   AiOutlineGithub,
   AiOutlineLinkedin,
   AiOutlineMail,
 } from 'react-icons/ai';
-const Footer = () => {
+
+const Footer = async () => {
+  const t = await getTranslations('footer');
+
   return (
     <footer className='mx-auto max-w-3xl px-4 sm:px-6 md:max-w-5xl '>
       <hr className='w-full h-0.5 mx-auto mt-8 bg-neutral-200 border-0'></hr>
@@ -16,6 +20,7 @@ const Footer = () => {
             href='https://github.com/jorgediazok'
             rel='noreferrer'
             target='_blank'
+            aria-label={t('githubAria')}
           >
             <AiOutlineGithub
               className='hover:-translate-y-1 transition-transform cursor-pointer text-neutral-500 dark:text-neutral-100'
@@ -26,6 +31,7 @@ const Footer = () => {
             href='https://www.linkedin.com/in/jorgediaz1984/'
             rel='noreferrer'
             target='_blank'
+            aria-label={t('linkedinAria')}
           >
             <AiOutlineLinkedin
               className='hover:-translate-y-1 transition-transform cursor-pointer text-neutral-500 dark:text-neutral-100'
@@ -36,6 +42,7 @@ const Footer = () => {
             href='mailto:jorgediazok@gmail.com'
             rel='noreferrer'
             target='_blank'
+            aria-label={t('emailAria')}
           >
             <AiOutlineMail
               className='hover:-translate-y-1 transition-transform cursor-pointer text-neutral-500 dark:text-neutral-100'

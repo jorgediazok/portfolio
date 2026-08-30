@@ -2,15 +2,15 @@ import { NavItem } from '@/types';
 
 export const NAV_ITEMS: Array<NavItem> = [
   {
-    label: 'Home',
+    id: 'home',
     page: 'home',
   },
   {
-    label: 'About',
+    id: 'about',
     page: 'about',
   },
   {
-    label: 'Projects',
+    id: 'projects',
     page: 'projects',
   },
 ];

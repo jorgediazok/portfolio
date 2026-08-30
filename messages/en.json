@@ -1,0 +1,68 @@
+{
+  "common": {
+    "skipToContent": "Skip to main content"
+  },
+  "metadata": {
+    "title": "Jorge Díaz | Senior Frontend Developer",
+    "description": "Portfolio of Jorge Díaz, a senior frontend developer based in Buenos Aires, Argentina, building web products with React, Next.js and TypeScript."
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "projects": "Projects",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "lightMode": "Switch to light mode",
+    "darkMode": "Switch to dark mode",
+    "brandAria": "Jorge Díaz, scroll to top"
+  },
+  "hero": {
+    "imageAlt": "Portrait of Jorge Díaz",
+    "greeting": "Hi, I'm Jorge!",
+    "prefix": "I'm a",
+    "role": "Senior Frontend Developer",
+    "intro": "based in Buenos Aires, Argentina, with 5+ years of experience building and shipping web products with React, Next.js and TypeScript.",
+    "cta": "Projects",
+    "scrollAria": "Scroll to About section"
+  },
+  "about": {
+    "title": "About Me",
+    "subtitle": "Get to know me!",
+    "paragraph1": "I'm Jorge, a <bold>senior frontend developer</bold> based in Buenos Aires, Argentina, with <bold>5+ years</bold> of experience building web products end to end — from architecture and data modeling to the UI details that make software feel solid.",
+    "paragraph2": "My day-to-day stack is <bold>TypeScript, React and Next.js</bold>, but I care less about a specific framework and more about shipping maintainable code: clear boundaries, sensible defaults, and enough tests that changes don't feel risky.",
+    "paragraph3": "I come from a background in communication and marketing, which shapes how I work — I default to writing things down clearly, and I care about how a product reads to the person actually using it, not just how it's built underneath.",
+    "paragraph4": "Outside of work I travel, watch way too many series, and go trekking whenever I get the chance.",
+    "skillsTitle": "My Skills",
+    "categories": {
+      "languages": "Languages",
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "tooling": "Tooling"
+    }
+  },
+  "projects": {
+    "title": "Projects",
+    "githubAria": "View {name} source code on GitHub",
+    "liveAria": "Open {name} live site",
+    "screenshotAlt": "Screenshot of the {name} project",
+    "items": {
+      "cultureAtlas": {
+        "name": "The Culture Atlas",
+        "description": "A digital culture atlas covering all 206 countries and territories in the world, presented as an interactive illustrated book with over 3,000 bilingual (ES/EN) stories, each paired with a hand-drawn SVG illustration. Fully static content architecture, a custom i18n layer, and a book-style page-turn carousel, backed by unit and end-to-end test coverage."
+      },
+      "artrends": {
+        "name": "Artrends",
+        "description": "Artrends is an app that aggregates and ranks the latest trends from various social media platforms in Argentina, including Twitter, Google, YouTube, Spotify, and news portals."
+      },
+      "beerHouse": {
+        "name": "Beer House",
+        "description": "BeerHouse is an e-commerce website developed for a client specializing in the sale of imported beers."
+      }
+    }
+  },
+  "footer": {
+    "githubAria": "GitHub",
+    "linkedinAria": "LinkedIn",
+    "emailAria": "Send an email"
+  }
+}

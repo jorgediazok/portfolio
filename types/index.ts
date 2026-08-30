@@ -1,7 +1,7 @@
 import { ReactNode } from 'react';
 
 export interface NavItem {
-  label: string;
+  id: string;
   page: string;
 }
 

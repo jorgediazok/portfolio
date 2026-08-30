@@ -1,18 +1,18 @@
 export const skillCategories = [
   {
-    category: 'Languages',
+    id: 'languages',
     items: ['TypeScript', 'JavaScript', 'SQL'],
   },
   {
-    category: 'Frontend',
+    id: 'frontend',
     items: ['React', 'Next.js', 'Angular', 'Tailwind CSS', 'Chakra UI'],
   },
   {
-    category: 'Backend',
+    id: 'backend',
     items: ['Node.js', 'MongoDB', 'REST APIs'],
   },
   {
-    category: 'Tooling',
+    id: 'tooling',
     items: ['Git', 'Jest', 'Cypress'],
   },
 ];

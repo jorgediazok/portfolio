@@ -2,22 +2,23 @@
 
 Personal portfolio of **Jorge Díaz**, a senior frontend developer based in Buenos Aires, Argentina.
 
-![Next.js](https://img.shields.io/badge/Next.js-13-black?logo=next.js)
-![TypeScript](https://img.shields.io/badge/TypeScript-5.1-blue?logo=typescript)
-![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3.3-38bdf8?logo=tailwindcss)
-![Deployed on Vercel](https://img.shields.io/badge/Deployed_on-Vercel-black?logo=vercel)
+![Next.js](https://img.shields.io/badge/Next.js-16-black?logo=next.js)
+![TypeScript](https://img.shields.io/badge/TypeScript-5.9-blue?logo=typescript)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-4.3-38bdf8?logo=tailwindcss)
+![Deployed on Netlify](https://img.shields.io/badge/Deployed_on-Netlify-00C7B7?logo=netlify)
 
-A single-page site with a Hero, About, and Projects section, dark mode, and scroll-reveal animations.
+A single-page site with a Hero, About, and Projects section, dark mode, scroll-reveal animations, and English/Spanish localization.
 
 ## Tech stack
 
-| Layer      | Tools                                  |
-| ---------- | --------------------------------------- |
-| Framework  | Next.js 13 (App Router)                 |
-| Language   | TypeScript                              |
-| Styling    | Tailwind CSS                            |
-| Theming    | next-themes (light/dark, system-aware)  |
-| Navigation | react-scroll (smooth in-page scrolling) |
+| Layer         | Tools                                     |
+| ------------- | ------------------------------------------ |
+| Framework     | Next.js 16 (App Router)                    |
+| Language      | TypeScript                                 |
+| Styling       | Tailwind CSS                               |
+| Theming       | next-themes (light/dark, system-aware)     |
+| i18n          | next-intl (`/en`, `/es`, English default)  |
+| Navigation    | react-scroll (smooth in-page scrolling)    |
 
 ## Getting started
 
@@ -39,17 +40,22 @@ npm run lint    # lint the project
 ## Project structure
 
 ```
-app/          # App Router entry (layout, page, metadata)
-components/   # Navbar, Hero, About, Projects, Footer, theme Providers, Slide (scroll-reveal)
-utils/        # Content as data — nav items, projects, skills
+app/[locale]/ # App Router entry (layout, page) — locale-scoped
+app/          # Locale-agnostic metadata routes: icon, opengraph-image, robots, sitemap
+components/   # Navbar, Hero, About, Projects, Footer, theme Providers, Slide (scroll-reveal), Logo
+i18n/         # next-intl routing/navigation/request config
+messages/     # en.json / es.json — all translated UI copy
+utils/        # Content as data — nav items, projects, skills (non-translatable fields only)
 types/        # Shared TypeScript types
 ```
 
-Content (nav links, projects, skills) lives in `utils/` as plain data — update those files to change what's displayed, no need to touch component markup.
+Content (nav links, projects, skills) lives in `utils/` as plain data, keyed by a stable `id`. Translated strings for that content live in `messages/en.json` and `messages/es.json` under the matching `id` — update both files together when adding a project or skill.
 
 ## Deploy
 
-Deployed on [Vercel](https://vercel.com).
+Deployed on [Netlify](https://jorgedev-portfolio.netlify.app/). Set the `NEXT_PUBLIC_SITE_URL` environment variable if the domain ever changes — it drives `metadataBase`, canonical URLs, `robots.txt`, and `sitemap.xml`.
+
+> **Note:** `next/image` optimization is disabled (`images.unoptimized` in `next.config.js`) because Netlify's image proxy (`/_ipx`) currently 500s on this site. Images are served as static files directly instead. Revisit this if Netlify fixes their Next.js image handling.
 
 ## Contact
 
