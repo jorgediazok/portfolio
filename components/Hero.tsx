@@ -13,7 +13,7 @@ const Hero = () => {
             alt='profile_pic'
             width={275}
             height={275}
-            className='rounded-full shadow-2xl xs:w-225 xs:h-225'
+            className='rounded-full shadow-2xl'
           />
         </div>
         <div className='md:mt-2 md:w-3/5'>

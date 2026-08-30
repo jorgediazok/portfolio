@@ -22,7 +22,7 @@ const Projects = () => {
                     <Link href={project.link}>
                       <Image
                         src={project.image}
-                        alt=''
+                        alt={project.name}
                         width={1000}
                         height={1000}
                         className='rounded-xl shadow-xl hover:opacity-70'

@@ -24,7 +24,7 @@ export default function RootLayout({
   return (
     <html lang='en'>
       <head />
-      <body className='dark:bg-stone-900'>
+      <body className='bg-white text-neutral-900 dark:bg-stone-900 dark:text-neutral-100'>
         <Providers>
           <Navbar />
           {children}
