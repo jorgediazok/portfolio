@@ -1,17 +1,18 @@
-export const skills = [
-  { skill: 'HTML' },
-  { skill: 'CSS' },
-  { skill: 'JavaScript' },
-  { skill: 'TypeScript' },
-  { skill: 'Angular' },
-  { skill: 'React' },
-  { skill: 'Next.js' },
-  { skill: 'Chakra UI' },
-  { skill: 'Tailwind CSS' },
-  { skill: 'Bootstrap' },
-  { skill: 'Node js' },
-  { skill: 'MongoDB' },
-  { skill: 'SQL' },
-  { skill: 'Git' },
-  { skill: 'Rest API' },
+export const skillCategories = [
+  {
+    category: 'Languages',
+    items: ['TypeScript', 'JavaScript', 'SQL'],
+  },
+  {
+    category: 'Frontend',
+    items: ['React', 'Next.js', 'Angular', 'Tailwind CSS', 'Chakra UI'],
+  },
+  {
+    category: 'Backend',
+    items: ['Node.js', 'MongoDB', 'REST APIs'],
+  },
+  {
+    category: 'Tooling',
+    items: ['Git', 'Jest', 'Cypress'],
+  },
 ];

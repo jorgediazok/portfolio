@@ -1,5 +1,4 @@
-import { skills } from '@/utils/skills';
-import Image from 'next/image';
+import { skillCategories } from '@/utils/skills';
 
 const About = () => {
   return (
@@ -16,55 +15,55 @@ const About = () => {
               Get to know me!
             </h1>
             <p>
-              Hi, my name is Jorge and I am a{' '}
-              <span className='font-bold'>{'independent'}</span>,
-              <span className='font-bold'>{' self-motivated'}</span>, and
-              <span className='font-bold'>{' driven'}</span> software engineer
-              based in Buenos Aires, Argentina. With a background in
-              communication and marketing, I create innovative and user-friendly
-              software solutions.
+              I&apos;m Jorge, a{' '}
+              <span className='font-bold'>senior software engineer</span>{' '}
+              based in Buenos Aires, Argentina, with{' '}
+              <span className='font-bold'>5+ years</span> of experience
+              building web products end to end — from architecture and data
+              modeling to the UI details that make software feel solid.
             </p>
             <br />
             <p>
-              I thrive in both independent and collaborative environments. My
-              creativity and passion for technology drive me to constantly learn
-              and explore <span className='font-bold'>new possibilities</span>
+              My day-to-day stack is{' '}
+              <span className='font-bold'>TypeScript, React and Next.js</span>
+              , but I care less about a specific framework and more about
+              shipping maintainable code: clear boundaries, sensible
+              defaults, and enough tests that changes don&apos;t feel risky.
             </p>
             <br />
             <p>
-              Beyond work, I enjoy traveling, watching series, and engaging in
-              trekking adventures, which inspire fresh ideas and foster personal
-              growth.
+              I come from a background in communication and marketing, which
+              shapes how I work — I default to writing things down clearly,
+              and I care about how a product reads to the person actually
+              using it, not just how it&apos;s built underneath.
             </p>
             <br />
             <p>
-              Committed to continuous learning, I bring a growth mindset and
-              creative problem-solving to each project. I value collaboration
-              and strive to deliver high-quality solutions that meet
-              client&apos;s needs. 🙂
+              Outside of work I travel, watch way too many series, and go
+              trekking whenever I get the chance.
             </p>
           </div>
           <div className='text-center md:w-1/2 md:text-left'>
             <h1 className='text-2xl font-bold mb-6'>My Skills</h1>
-            <div className='flex flex-wrap flex-row justify-center z-10 md:justify-start'>
-              {skills.map((item, i) => {
-                return (
-                  <p
-                    key={i}
-                    className='bg-gray-200 px-4 py-2 mr-2 mt-2 text-gray-500 rounded font-semibold'
-                  >
-                    {item.skill}
-                  </p>
-                );
-              })}
+            <div className='space-y-5'>
+              {skillCategories.map((group, i) => (
+                <div key={i}>
+                  <h2 className='text-sm font-semibold uppercase tracking-wide text-neutral-500 dark:text-neutral-400 mb-2'>
+                    {group.category}
+                  </h2>
+                  <div className='flex flex-wrap flex-row justify-center gap-2 md:justify-start'>
+                    {group.items.map((skill, j) => (
+                      <p
+                        key={j}
+                        className='bg-gray-200 dark:bg-stone-700 px-4 py-2 text-gray-700 dark:text-gray-200 rounded font-semibold'
+                      >
+                        {skill}
+                      </p>
+                    ))}
+                  </div>
+                </div>
+              ))}
             </div>
-            <Image
-              src='/about-image.svg'
-              alt=''
-              width={225}
-              height={225}
-              className='hidden md:block md:relative mt-2 md:left-32 md:z-0'
-            />
           </div>
         </div>
       </div>

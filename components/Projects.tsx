@@ -34,6 +34,16 @@ const Projects = () => {
                     <p className='text-xl leading-7 mb-4 text-neutral-600 dark:text-neutral-400'>
                       {project.description}
                     </p>
+                    <div className='flex flex-wrap gap-2 mb-6'>
+                      {project.tech.map((tech, i) => (
+                        <span
+                          key={i}
+                          className='text-sm font-medium px-3 py-1 rounded-full bg-teal-50 text-teal-700 dark:bg-teal-900/30 dark:text-teal-300'
+                        >
+                          {tech}
+                        </span>
+                      ))}
+                    </div>
                     <div className='flex flex-row align-bottom space-x-4'>
                       <Link href={project.github} target='_blank'>
                         <BsGithub

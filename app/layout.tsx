@@ -1,8 +1,20 @@
-'use client';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
-import { ThemeProvider } from 'next-themes';
+import Providers from '@/components/Providers';
+import type { Metadata } from 'next';
 import '../styles/globals.css';
+
+export const metadata: Metadata = {
+  title: 'Jorge Díaz | Senior Software Engineer',
+  description:
+    'Portfolio of Jorge Díaz, a senior software engineer based in Buenos Aires, Argentina, building web products with React, Next.js and TypeScript.',
+  openGraph: {
+    title: 'Jorge Díaz | Senior Software Engineer',
+    description:
+      'Portfolio of Jorge Díaz, a senior software engineer based in Buenos Aires, Argentina, building web products with React, Next.js and TypeScript.',
+    type: 'website',
+  },
+};
 
 export default function RootLayout({
   children,
@@ -13,11 +25,11 @@ export default function RootLayout({
     <html lang='en'>
       <head />
       <body className='dark:bg-stone-900'>
-        <ThemeProvider enableSystem={true} attribute='class'>
+        <Providers>
           <Navbar />
           {children}
           <Footer />
-        </ThemeProvider>
+        </Providers>
       </body>
     </html>
   );

@@ -1,11 +1,21 @@
 export const projects = [
   {
+    name: 'The Culture Atlas',
+    description:
+      'A digital culture atlas covering all 206 countries and territories in the world, presented as an interactive illustrated book with over 3,000 bilingual (ES/EN) stories, each paired with a hand-drawn SVG illustration. Fully static content architecture, a custom i18n layer, and a book-style page-turn carousel, backed by unit and end-to-end test coverage.',
+    image: '/atlas.png',
+    github: 'https://github.com/jorgediazok/the-culture-atlas',
+    link: 'https://the-culture-atlas.vercel.app/',
+    tech: ['Next.js', 'React', 'TypeScript', 'MUI', 'Jest', 'Cypress'],
+  },
+  {
     name: 'Artrends',
     description:
       'Artrends is an app that aggregates and ranks the latest trends from various social media platforms in Argentina, including Twitter, Google, YouTube, Spotify, and news portals.',
     image: '/artrends.png',
     github: 'https://github.com/empatika-lab/artrends',
     link: 'https://artrends.ar/',
+    tech: ['Next.js', 'TypeScript', 'REST APIs'],
   },
   {
     name: 'Beer House',
@@ -14,13 +24,6 @@ export const projects = [
     image: '/beer.png',
     github: 'https://github.com/jorgediazok/beerhome-project',
     link: 'https://beerhouse.onrender.com/',
-  },
-  {
-    name: 'React Movies',
-    description:
-      'A website that enables users to search the comprehensive database of The Movie Database (TMDB) for various types of movies, along with their associated details.',
-    image: '/movies.png',
-    github: 'https://github.com/jorgediazok/react-movies-2021',
-    link: 'https://react-movies-21.netlify.app/',
+    tech: ['React', 'Node.js', 'MongoDB'],
   },
 ];
