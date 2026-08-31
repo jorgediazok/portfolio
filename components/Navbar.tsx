@@ -4,8 +4,10 @@ import { useState, useSyncExternalStore } from 'react';
 import { useTheme } from 'next-themes';
 import { useLocale, useTranslations } from 'next-intl';
 import { NAV_ITEMS } from '@/utils/navItems';
+import { RESUME_LINKS } from '@/utils/resume';
 import { RiMoonFill, RiSunLine } from 'react-icons/ri';
 import { IoMdMenu, IoMdClose } from 'react-icons/io';
+import { AiOutlineDownload } from 'react-icons/ai';
 import Link from 'react-scroll/modules/components/Link';
 import Logo from './Logo';
 
@@ -79,6 +81,16 @@ const Navbar = () => {
                   </Link>
                 );
               })}
+              <a
+                href={RESUME_LINKS[locale]}
+                target='_blank'
+                rel='noopener noreferrer'
+                aria-label={t('resumeAria')}
+                className='flex items-center gap-1.5 text-sm font-semibold border border-teal-700 text-teal-700 dark:border-teal-400 dark:text-teal-400 px-3 py-1.5 rounded hover:bg-teal-700 hover:text-white dark:hover:bg-teal-400 dark:hover:text-stone-900 transition-colors'
+              >
+                <AiOutlineDownload size={16} aria-hidden='true' />
+                {t('resume')}
+              </a>
               <div
                 className='flex items-center gap-1 text-sm font-semibold'
                 aria-label='Language'

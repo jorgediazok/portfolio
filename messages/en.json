@@ -14,7 +14,9 @@
     "closeMenu": "Close menu",
     "lightMode": "Switch to light mode",
     "darkMode": "Switch to dark mode",
-    "brandAria": "Jorge Díaz, scroll to top"
+    "brandAria": "Jorge Díaz, scroll to top",
+    "resume": "Resume",
+    "resumeAria": "Download resume (PDF)"
   },
   "hero": {
     "imageAlt": "Portrait of Jorge Díaz",
@@ -34,9 +36,11 @@
     "paragraph4": "Outside of work I travel, watch way too many series, and go trekking whenever I get the chance.",
     "skillsTitle": "My Skills",
     "categories": {
-      "languages": "Languages",
-      "frontend": "Frontend",
-      "backend": "Backend",
+      "languagesFrontend": "Languages & Frontend",
+      "uiStyling": "UI & Styling",
+      "backend": "Backend & APIs",
+      "cloudDevops": "Cloud & DevOps",
+      "testing": "Testing & Quality",
       "tooling": "Tooling"
     }
   },

@@ -14,7 +14,9 @@
     "closeMenu": "Cerrar menú",
     "lightMode": "Cambiar a modo claro",
     "darkMode": "Cambiar a modo oscuro",
-    "brandAria": "Jorge Díaz, ir arriba"
+    "brandAria": "Jorge Díaz, ir arriba",
+    "resume": "Currículum",
+    "resumeAria": "Descargar currículum (PDF)"
   },
   "hero": {
     "imageAlt": "Retrato de Jorge Díaz",
@@ -34,9 +36,11 @@
     "paragraph4": "Fuera del trabajo viajo, miro demasiadas series, y salgo a hacer trekking cuando puedo.",
     "skillsTitle": "Mis Skills",
     "categories": {
-      "languages": "Lenguajes",
-      "frontend": "Frontend",
-      "backend": "Backend",
+      "languagesFrontend": "Lenguajes y Frontend",
+      "uiStyling": "UI y Estilos",
+      "backend": "Backend y APIs",
+      "cloudDevops": "Cloud y DevOps",
+      "testing": "Testing y Calidad",
       "tooling": "Herramientas"
     }
   },

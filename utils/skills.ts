@@ -1,18 +1,26 @@
 export const skillCategories = [
   {
-    id: 'languages',
-    items: ['TypeScript', 'JavaScript', 'SQL'],
+    id: 'languagesFrontend',
+    items: ['TypeScript', 'JavaScript', 'React', 'Next.js', 'Angular'],
   },
   {
-    id: 'frontend',
-    items: ['React', 'Next.js', 'Angular', 'Tailwind CSS', 'Chakra UI'],
+    id: 'uiStyling',
+    items: ['Tailwind CSS', 'Material UI', 'Styled Components', 'SASS'],
   },
   {
     id: 'backend',
-    items: ['Node.js', 'MongoDB', 'REST APIs'],
+    items: ['Node.js', 'Express', 'REST APIs', 'GraphQL'],
+  },
+  {
+    id: 'cloudDevops',
+    items: ['Azure DevOps', 'AWS', 'Docker', 'Kubernetes'],
+  },
+  {
+    id: 'testing',
+    items: ['Cypress', 'Jest', 'Lighthouse', 'WCAG'],
   },
   {
     id: 'tooling',
-    items: ['Git', 'Jest', 'Cypress'],
+    items: ['Git', 'GitHub', 'Agile/Scrum'],
   },
 ];
