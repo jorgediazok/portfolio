@@ -60,7 +60,7 @@
       },
       "beerHouse": {
         "name": "Beer House",
-        "description": "BeerHouse is an e-commerce website developed for a client specializing in the sale of imported beers."
+        "description": "BeerHouse is a full e-commerce platform built for a client specializing in imported beers, featuring a product catalog, shopping cart, special offers, and user authentication."
       }
     }
   },

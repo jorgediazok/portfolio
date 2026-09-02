@@ -60,7 +60,7 @@
       },
       "beerHouse": {
         "name": "Beer House",
-        "description": "BeerHouse es un e-commerce desarrollado para un cliente especializado en la venta de cervezas importadas."
+        "description": "BeerHouse es una plataforma de e-commerce completa desarrollada para un cliente especializado en cervezas importadas, con catálogo de productos, carrito de compras, ofertas especiales y autenticación de usuarios."
       }
     }
   },

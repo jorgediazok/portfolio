@@ -16,8 +16,8 @@ export const projects = [
   {
     id: 'beerHouse',
     image: '/beer.png',
-    github: 'https://github.com/jorgediazok/beerhome-project',
-    link: 'https://beerhouse.onrender.com/',
+    github: 'https://github.com/jorgediazok/beerhouse',
+    link: 'https://beerhouse-eta.vercel.app/',
     tech: ['React', 'Node.js', 'MongoDB'],
   },
 ];
