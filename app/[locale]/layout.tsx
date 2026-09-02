@@ -72,7 +72,7 @@ const personJsonLd = {
   },
   sameAs: [
     'https://github.com/jorgediazok',
-    'https://www.linkedin.com/in/jorgediaz1984/',
+    'https://www.linkedin.com/in/jorgediaz-dev/',
   ],
 };
 

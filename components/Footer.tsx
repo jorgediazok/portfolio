@@ -28,7 +28,7 @@ const Footer = async () => {
             />
           </a>
           <a
-            href='https://www.linkedin.com/in/jorgediaz1984/'
+            href='https://www.linkedin.com/in/jorgediaz-dev/'
             rel='noreferrer'
             target='_blank'
             aria-label={t('linkedinAria')}
