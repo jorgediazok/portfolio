@@ -36,6 +36,7 @@ const Projects = async () => {
                         alt={t('screenshotAlt', { name })}
                         width={1000}
                         height={1000}
+                        priority={idx === 0}
                         className='rounded-xl shadow-xl hover:opacity-70'
                       />
                     </Link>

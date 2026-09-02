@@ -6,11 +6,13 @@ import { NextIntlClientProvider, hasLocale } from 'next-intl';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 import Script from 'next/script';
+import { GoogleAnalytics } from '@next/third-parties/google';
 import { routing } from '@/i18n/routing';
 import '../../styles/globals.css';
 
 const SITE_URL =
   process.env.NEXT_PUBLIC_SITE_URL || 'https://jorgedev-portfolio.netlify.app';
+const GA_MEASUREMENT_ID = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID;
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
@@ -115,6 +117,7 @@ export default async function LocaleLayout({
           </Providers>
         </NextIntlClientProvider>
       </body>
+      {GA_MEASUREMENT_ID && <GoogleAnalytics gaId={GA_MEASUREMENT_ID} />}
     </html>
   );
 }

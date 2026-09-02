@@ -9,9 +9,9 @@ export const projects = [
   {
     id: 'artrends',
     image: '/artrends.png',
-    github: 'https://github.com/empatika-lab/artrends',
-    link: 'https://artrends.ar/',
-    tech: ['Next.js', 'TypeScript', 'REST APIs'],
+    github: 'https://github.com/jorgediazok/artrends',
+    link: 'https://artrends.vercel.app/',
+    tech: ['Next.js', 'TypeScript', 'REST APIs', 'MongoDB', 'Redis', 'Web Scraping'],
   },
   {
     id: 'beerHouse',
