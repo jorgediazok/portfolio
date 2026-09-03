@@ -60,7 +60,7 @@
       },
       "beerHouse": {
         "name": "Beer House",
-        "description": "BeerHouse is a full e-commerce platform built for a client specializing in imported beers, featuring a product catalog, shopping cart, special offers, and user authentication."
+        "description": "BeerHouse is a full e-commerce platform built for a client specializing in imported beers, featuring a product catalog, shopping cart, special offers, user authentication, CMS-managed content, and Mercado Pago payment integration."
       }
     }
   },
